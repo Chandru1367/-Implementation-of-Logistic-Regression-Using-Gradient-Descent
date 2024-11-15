@@ -26,11 +26,11 @@ RegisterNumber: 24900224
  import pandas as pd
  import numpy as np
  data=pd.read_csv("Placement_Data (1).csv")
- data.head()
+ print(data.head())
  data1=data.copy()
- data1.head()
+ print(data1.head())
  data1=data.drop(['sl_no','salary'],axis=1)
- data1
+ print(data1)
  from sklearn.preprocessing import LabelEncoder
  le=LabelEncoder()
  data1["gender"]=le.fit_transform(data1["gender"])
@@ -72,8 +72,12 @@ RegisterNumber: 24900224
  print("Predicted Result:",y_prednew)
 ```
 ## Output:
+![Screenshot 2024-11-15 100329](https://github.com/user-attachments/assets/8e1d9c31-d2fa-4f46-9600-5da7d0b9ea41)
+![Screenshot 2024-11-15 100430](https://github.com/user-attachments/assets/800ada4a-d39a-498a-9d0a-647d1af407cf)
+![Screenshot 2024-11-15 100437](https://github.com/user-attachments/assets/43f27a72-9181-483a-854d-432b6a3a952a)
+![Screenshot 2024-11-15 100448](https://github.com/user-attachments/assets/07916a67-69fb-4a6c-b60b-434d7637866d)
+![Screenshot 2024-11-15 100455](https://github.com/user-attachments/assets/c1770ece-6c54-45d3-b988-ee2535cd4bf4)
 
-![Screenshot 2024-11-14 191046](https://github.com/user-attachments/assets/4dbeeeb4-5c03-43ab-b932-19d4e8b76c02)
 
 
 ## Result:
